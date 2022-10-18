@@ -46,10 +46,6 @@ class AirTraffic
         }
 
         long Line_Location = Sorted_Coordinates[Half_Length].Item1;
-        //ERROR: uiteindelijk is de set compleet leeg (0) maar wil die m' met 0 indexeren wat
-        //niet kan want set[0] bevat 1 item op de 0'de positie. Probleem moet aangepakt worden bij 
-        //Half_Length zelf anders gaat deze overal een 0 doorgeven terwijl het leeg is. Vroegtijdig 
-        //stoppen dus!.
 
         //Deciding what the area around the boundary should be:
         long Pos_A_LS = Math.Abs(Sorted_Coordinates[0].Item1 - Sorted_Coordinates[1].Item1);
@@ -229,40 +225,3 @@ class AirTraffic
     }
 
 }
-
-#region Test Cases
-/*
-
-10 // 10 vliegtuigen
-34 22 /// eerste vliegtuig
-73 46 /2de vliegtuig
-30 50 % et
-31 24 $ cetera
-34 63
-28 79
-24 26
-10 81
-42 52
-95 5 dat was het alweer!
-
-*/
-
-#endregion
-
-#region Resources
-/*
-
-PDF FILES:
-C:\Users\Tobias\Desktop\Kunstmatige intelligentie\Jaar 2\Blok 1\Datastructuren en algoritmen voor KI\Seminars\Code Assignments\3\PR_AirTrafficBb.pdf
-C:\Users\Tobias\Desktop\Kunstmatige intelligentie\Jaar 2\Blok 1\Datastructuren en algoritmen voor KI\Seminars\Code Assignments\3\SEE ASSIGNMENT 22.pdf
-
-YOUTUBE LINKS:
-https://www.youtube.com/watch?v=4VqmGXwpLqc
-https://www.youtube.com/watch?v=7LN9z140U90
-
-https://www.youtube.com/watch?v=6u_hWxbOc7E [Complete explenation in pseudocode]
-https://www.youtube.com/watch?time_continue=149&v=0W_m46Q4qMc [Complete explenation in pseudocode]
-
-*/
-
-#endregion
